@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Search, Heart, ShoppingBag, User, Menu, X, ChevronDown, Phone, MapPin } from 'lucide-react';
 import { useShop } from '../context/ShopContext';
 import { CategorySlug } from '../types';
+import { farashaLogoImg } from '../data/products';
 
 export const Navbar: React.FC = () => {
   const {
@@ -129,18 +130,22 @@ export const Navbar: React.FC = () => {
               </button>
             </div>
 
-            {/* Left: Brand Logo (Single text element wordmark as per Top Bar contract) */}
+            {/* Left: Brand Logo Lockup */}
             <div className="flex-shrink-0">
               <button
                 onClick={() => navigateTo('home')}
-                className="text-left group cursor-pointer focus:outline-none"
+                className="flex items-center text-left group cursor-pointer focus:outline-none py-1"
+                aria-label="Farasha Clothing Home"
               >
-                <span className="font-serif text-2xl md:text-3xl tracking-[0.18em] uppercase font-medium text-[#171717] group-hover:text-[#9E7D4E] transition-colors">
-                  FARASHA
-                </span>
-                <span className="block text-[9px] tracking-[0.38em] text-[#7A7368] uppercase -mt-0.5 group-hover:text-[#171717] transition-colors">
-                  CLOTHING
-                </span>
+                {/* Official Farasha Clothing Brand Logo Asset */}
+                <img
+                  src={farashaLogoImg}
+                  alt="Farasha Clothing"
+                  className="h-10 sm:h-11 md:h-12 w-auto object-contain shrink-0 transition-transform duration-300 group-hover:scale-[1.02]"
+                  style={{ imageRendering: 'auto' }}
+                  loading="eager"
+                  decoding="sync"
+                />
               </button>
             </div>
 

@@ -9,8 +9,12 @@ import zariSareeImg from '../assets/images/product_zari_saree_1791224420048.jpg'
 import anarkaliImg from '../assets/images/product_anarkali_gown_1791224435854.jpg';
 import modestKaftanImg from '../assets/images/product_modest_kaftan_1791224445892.jpg';
 import chikankariImg from '../assets/images/product_chikankari_kurti_1791224457689.jpg';
+import farashaLogoImg from '../assets/images/farasha_horizontal_logo.svg';
+import farashaOfficialLogoSvg from '../assets/images/farasha_official_logo.svg';
+import farashaHorizontalLogoSvg from '../assets/images/farasha_horizontal_logo.svg';
+import farashaEmblemSvg from '../assets/images/farasha_butterfly_emblem.svg';
 
-export { heroImg, sareeSigImg, kurtiEditImg, modestWearImg, boutiqueImg, zariSareeImg, anarkaliImg, modestKaftanImg, chikankariImg };
+export { heroImg, sareeSigImg, kurtiEditImg, modestWearImg, boutiqueImg, zariSareeImg, anarkaliImg, modestKaftanImg, chikankariImg, farashaLogoImg, farashaOfficialLogoSvg, farashaHorizontalLogoSvg, farashaEmblemSvg };
 
 // Official Farasha UAE WhatsApp Business Concierge & Orders Hotline
 export const FARASHA_WHATSAPP_NUMBER = '971505016078';
